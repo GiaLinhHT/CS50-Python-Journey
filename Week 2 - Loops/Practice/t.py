@@ -1,11 +1,8 @@
-s="htglinh@gmail.com"
-a = 0
+s = input("Input a string: ")
 for i, char in enumerate(s):
-    if char == "@":
-        if "." in s[i:]:
-            a+=1
-if a>=1:
-    print("OK")
+    if s[i].isdigit():
+        print("Index:",i+1)
+        print("Digit:", char)
+        break
 else:
-    print("NO")
-
+    print("No digits found")
