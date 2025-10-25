@@ -11,6 +11,6 @@ for i, char in enumerate(s):
         b+=1
     else:
         c+=1
-print("Number of letters are: ",a)
-print("Number of digits are: ",b)
-print("Number of special characters are: ",c)
+print("Number of letters are:",a)
+print("Number of digits are:",b)
+print("Number of special characters are:",c)
