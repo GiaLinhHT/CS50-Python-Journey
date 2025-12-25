@@ -1,4 +1,3 @@
-i = "hello World"
-print(i.upper())
-print(i.title())
-print(i.lower())
+grocery = {}
+grocery["apple"] = 3
+print(grocery)
