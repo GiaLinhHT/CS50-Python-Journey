@@ -13,14 +13,15 @@ total = 0
 while True:
     try:
         item = input("Item: ")
-    except KeyError:
-        pass
+    #except KeyError: - input never raises KeyError
+        #pass
     except EOFError:
         break
     else:
-        if item.title() in menu:
-            total = total + menu[item.title()]
-print(f"Total: ${total}")
+        for i in menu: # Time complexity: O(n) per input; unnecessary when dictionaries exist - Dictionaries are made for direct lookup, not looping 
+            if i.lower() == item.lower():
+                total += menu[i]
+print(f"Total: ${total:.2f}")
 
 
                         

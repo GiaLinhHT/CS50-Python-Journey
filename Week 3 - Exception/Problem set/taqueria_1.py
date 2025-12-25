@@ -12,15 +12,15 @@ menu ={
 total = 0
 while True:
     try:
-        item = input("Item: ")
-    except KeyError:
-        pass
+        item = input("Item: ")   
+    #except KeyError: - input never raises KeyError
+        #pass
     except EOFError:
         break
     else:
-        for i in menu:
-            if i.lower() == item.lower():
-                total = total + menu[i]
+        item = item.title()
+        if item in menu:
+            total += menu[item]
 print(f"Total: ${total:.2f}")
 
 
