@@ -10,5 +10,6 @@ while True:
         else:
             #groceries.update({item:1})
             groceries[item] = 1
+            #groceries[item] = groceries.get(item,0)+1
 for i in sorted(groceries):
     print(f"{groceries[i]} {i}")
