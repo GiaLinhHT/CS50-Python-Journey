@@ -6,7 +6,7 @@ while True:
         x = int(x)
         y = int(y)
         percent = (x/y)*100
-    except (ValueError,ZeroDivisionError):
+    except (ValueError, ZeroDivisionError):
         pass
     else:
         break
